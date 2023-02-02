@@ -7,8 +7,7 @@ contract luckydraw{
     address payable[] private uaddr;
 
     address  public owner;
-    uint initialsum = 2 ether;
-    mapping (address => uint)  private sum; 
+    uint initialsum = 2 ether; 
      
      modifier initialfee(){
          require(msg.value== initialsum,"Entry is restricted only to participants who pay 2 ether.(Participants paying more than 2 ether are also not accepted");
